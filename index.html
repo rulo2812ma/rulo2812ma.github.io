@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medel Analco Raul</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/icono.png" type="image/png">
+</head>
+<body>
+    <header>
+       <nav>
+        <div class="logo">Festival 2026</div>
+        <ul>
+            <li><a href="#hero">Inicio</a></li>
+            <li><a href="#artistas">Artistas</a></li>
+            <li><a href="#entradas">Entradas</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+       </nav> 
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Festival de Verano 2026</h1>
+            <p>El evento musical más esperado del año</p>
+            <a href="#entradas"><button class="cta-button">Comprar Entradas</button></a>
+        </section>
+
+        <section id="artistas">
+            <h2>Artistas Destacados</h2>
+            <div class="artista-grid">
+                <!-- Artista 1: Fuerza Regida -->
+                <div class="artista-card">
+                    <img src="img/fuerza.jpg" alt="Fuerza Regida">
+                    <h3>Fuerza Regida</h3>
+                    <p><strong>Género:</strong> Regional Mexicano / Corridos Tumbados</p>
+                    <p><strong>Show en vivo:</strong> Vientos, tuba, energía explosiva y éxitos virales</p>
+                    <p><strong>Próx. fecha:</strong> Por confirmar — Gira 2026/2027</p>
+                    <p><strong>Precio:</strong> Por confirmar en taquilla</p>
+                    <div class="artista-redes">
+                        <a href="https://www.instagram.com/fuerzaregida/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                        <a href="https://www.youtube.com/@FuerzaRegida" target="_blank" rel="noopener noreferrer">YouTube</a>
+                    </div>
+                </div>
+
+                <!-- Artista 2: Junior H -->
+                <div class="artista-card">
+                    <img src="img/junior h.jpg" alt="Junior H">
+                    <h3>Junior H</h3>
+                    <p><strong>Género:</strong> Sad Sierreño / Corridos Tumbados</p>
+                    <p><strong>Show en vivo:</strong> Letras melancólicas, requinto y repertorio completo</p>
+                    <p><strong>Próx. fecha:</strong> Por confirmar — Gira 2026/2027</p>
+                    <p><strong>Boletos:</strong> Desde $600 MXN (aprox.)</p>
+                    <div class="artista-redes">
+                        <a href="https://www.instagram.com/juniorh/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                        <a href="https://www.youtube.com/@JuniorH" target="_blank" rel="noopener noreferrer">YouTube</a>
+                    </div>
+                </div>
+
+                <!-- Artista 3: Oscar Maydon -->
+                <div class="artista-card">
+                    <img src="img/oscar.jpg" alt="Oscar Maydon">
+                    <h3>Oscar Maydon</h3>
+                    <p><strong>Género:</strong> Corridos Tumbados / Urbano Mexicano</p>
+                    <p><strong>Show en vivo:</strong> Colaboraciones top, beats urbanos y regional en vivo</p>
+                    <p><strong>Próx. fecha:</strong> Por confirmar — Gira 2026/2027</p>
+                    <p><strong>Boletos:</strong> $600 a $5,760 MXN (efectivo)</p>
+                    <div class="artista-redes">
+                        <a href="https://www.instagram.com/oscarmaydon/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                        <a href="https://www.youtube.com/@OscarMaydon" target="_blank" rel="noopener noreferrer">YouTube</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="entradas">
+            <h2>Tipos de Entradas</h2>
+            <div class="entradas-grid">
+                <div class="entradas-card">
+                    <h3>Entrada General</h3>
+                    <p class="precio">$600 MXN</p>
+                    <ul>
+                        <li>Acceso a Festival 2026</li>
+                        <li>$621 MXN con tarjeta</li>
+                        <li>Zona General</li>
+                    </ul>
+                    <a href="#contacto"><button>Comprar</button></a>
+                </div>
+
+                <div class="entradas-card destacada">
+                    <h3>Zona Ruedo / VIP</h3>
+                    <p class="precio">$5,760 MXN</p>
+                    <ul>
+                        <li>Acceso preferente Festival 2026</li>
+                        <li>$5,962 MXN con tarjeta</li>
+                        <li>Zona preferente / Ruedo</li>
+                    </ul>
+                    <a href="#contacto"><button>Comprar</button></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto y Reservaciones</h2>
+            <form class="contacto-form" action="https://formspree.io/f/xqpqgngl" method="POST">
+                <!-- Elemento 1: input -->
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+
+                <!-- Elemento 2: select -->
+                <label for="asunto">Tipo de entrada o consulta:</label>
+                <select id="asunto" name="asunto" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="general">Entrada General ($600 MXN)</option>
+                    <option value="vip">Zona Ruedo / VIP ($5,760 MXN)</option>
+                    <option value="artistas">Información de los artistas</option>
+                </select>
+
+                <!-- Elemento 3: textarea -->
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+                <button type="submit">Enviar mensaje</button>
+              
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <p>Email:ejemplo@gmail.com</p>
+                <p>Tel: 244 106 5542</p>
+            </div>
+            <div class="footer-section">
+                <h4>Síguenos</h4>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">YouTube</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Festival de Verano. Todos los derechos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>
